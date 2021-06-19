@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="content">
+        <img src="../../../assets/img/rosto_mario.png" alt="">
+        <div class="calculator">
+            <input class="result" type="text" [(ngModel)]="display" />
+            <div class="keyboard">
+
+                <div class="grid-main">
+                    <button class="blind_btn"></button>
+                    <button class="blind_btn"></button>
+
+                    <button class="key_btn" *ngFor="let btn of btns" (click)="calc($event)">{{ btn }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
